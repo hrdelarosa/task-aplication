@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  color-scheme: light dark;
+}
+
+#root {
+  max-width: 1280px;
+  max-height: 100vh;
+  margin-inline: auto;
+}
+
+.taskBar {
+  display: grid;
+  grid-template-columns: auto 385px;
+}
+
+.scrol {
+  scrollbar-width: none;
+}
+
+.root {
+  --rdp-accent-color: #dbff5e;
+  --rdp-day-height: 35px;
+  --rdp-day-width: 35px;
+  --rdp-day_button-border-radius: 8px;
+}
+
+/* body {
+  --sb-track-color: #121212;
+  --sb-thumb-color: #ebff95;
+  --sb-size: 4px;
+}
+
+.scrol {
+  overflow-y: hidden;
+  scrollbar-gutter: stable;
+}
+
+.scrol:hover {
+  overflow-y: auto;
+}
+
+.scrol::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.scrol::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 5px;
+}
+
+.scrol::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 5px;
+} */
