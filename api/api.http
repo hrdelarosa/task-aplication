@@ -1,0 +1,62 @@
+### Recuperar todas las Tareas
+GET http://localhost:1234/tasks
+
+### Recuperar todas las Tareas que esten marcadas como Favoritas
+GET http://localhost:1234/tasks/favorites
+
+### Actualizar el Estatus de Favorito de la Tarea
+PATCH http://localhost:1234/tasks/favorites/1d74628a-6504-11ef-b4e5-459725f24fb2
+Content-Type: application/json
+
+{
+  "favorite": 1
+}
+
+### Actualizar la fecha de recordatorio de la Tarea
+PATCH http://localhost:1234/tasks/reminder/1d74458d-6504-11ef-b4e5-459725f24fb2
+Content-Type: application/json
+
+{
+  "date": null
+}
+
+### Actualizar la fecha de expiración de la Tarea
+PATCH http://localhost:1234/tasks/dueDate/1d745b37-6504-11ef-b4e5-459725f24fb2
+Content-Type: application/json
+
+{
+  "date": "2024-08-31"
+}
+
+### Borrar una tarea
+DELETE Http://localhost:1234/tasks/020253a0-6696-11ef-b4e5-459725f24fb2
+
+### Actualizar el estado de la Tarea
+PATCH http://localhost:1234/tasks/status/7d3e7821-675c-11ef-a35f-4ea964f9b395
+Content-Type: application/json
+
+{
+  "status": "pending"
+}
+
+### Crear una nueva Tarea
+POST http://localhost:1234/tasks
+Content-Type: application/json
+
+{
+  "title": "Modificar el BackEnd",
+  "description": "Hacer que funcione el crear una nueva Tarea",
+  "due_date": "2024-09-25",
+  "status": "pending",
+  "favorite": false,
+  "remind_at": null
+}
+
+### Actualizar una tarea
+PATCH http://localhost:1234/tasks/f16860ab-6a7b-11ef-bc3f-4e819f9a24e4
+Content-Type: application/json
+
+{
+  "title": "Limpiar la Computadora",
+  "description": "Abrir la computadora para hacerle una limpieza profunda"
+}
