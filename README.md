@@ -12,6 +12,8 @@ A task management application that allows users to create, add, edit, and set du
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Database Schema](#database-schema)
+  - [SQL](#sql-code)
+  - [Table](#tasks-table)
 
 ## Features
 
