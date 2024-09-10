@@ -1,8 +1,0 @@
-### Registrar un nuevo usuario
-PATCH http://localhost:1234/auth/register
-Content-Type: application/json
-
-{
-  "userName": "hozmel11",
-  "password": "123456"
-}
